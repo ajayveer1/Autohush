@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="fill"
+    android:orientation="vertical"
+    android:id="@+id/my_relative_layout"
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/middle_box" />
+
+    <ImageView
+        android:id="@+id/corporate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/corporate" />
+
+    <ImageButton
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Vib"
+        android:layout_below="@+id/Vib"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="@color/Black"
+        android:maxHeight="75dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wifi" />
+
+    <ImageButton
+        android:id="@+id/Vib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/corporate"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="22dp"
+        android:adjustViewBounds="true"
+        android:background="@color/Black"
+        android:maxHeight="75dp"
+        android:maxWidth="75dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vib" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wifi"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/wifi"
+        android:adjustViewBounds="true"
+        android:background="@color/Beige"
+        android:maxHeight="100dp"
+        android:maxWidth="75dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/exchanging" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignTop="@+id/Vib"
+        android:adjustViewBounds="true"
+        android:background="@color/black"
+        android:maxHeight="100dp"
+        android:maxWidth="75dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/auricular11" />
+
+    
+    
+</RelativeLayout>

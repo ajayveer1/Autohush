@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/grey"
+        android:backgroundTint="#70666666"
+        android:gravity="fill_vertical|center"
+        android:height="30dp"
+        android:maxHeight="100dp"
+        android:minHeight="0dp"
+        android:text="You are here"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#52DBFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
